@@ -23,11 +23,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--very-dark-blue);
     background-image: url(images/bg-mobile.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: var(--very-dark-blue);
+
 }
 
 main{
@@ -166,7 +167,7 @@ li{
     }
 
     main{
-        width: 80%;
+        width: 60%;
         grid-template: 100% / 40% auto;
     }
 
