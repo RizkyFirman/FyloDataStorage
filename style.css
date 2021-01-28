@@ -87,9 +87,6 @@ li{
     cursor: pointer;
     align-self: flex-end;
 }
-.status-content:hover + .hover{
-    opacity: 1;
-}
 
 .status-bar{
     margin: 1em 0;
@@ -128,7 +125,6 @@ li{
 }
 
 .hover{
-    opacity: 0;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -179,7 +175,7 @@ li{
     }
  
     .hover{
-        top: 25%;
+        top: 5%;
         right: 8%;
         bottom: unset;
         border-radius: 10px 10px 0 10px;
@@ -189,9 +185,22 @@ li{
         font-size: 1rem;
     }
     .hover h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
+    /* create the triangle */
+    .hover::before{
+        content: '';
+        position:absolute;
+        width: 0;
+        height: 0;
+        border:solid 30px rgb(255, 255, 255);
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        right: 0;
+        bottom: -30%;
+    }
 
     .status-content{
         align-items: flex-start;
