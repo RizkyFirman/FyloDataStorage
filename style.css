@@ -161,6 +161,8 @@ li{
 
     body{
         background-image: url(images/bg-desktop.png);
+        background-position: bottom;
+        background-size: contain;
     }
 
     main{
